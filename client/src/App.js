@@ -1,24 +1,75 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <main>
+      <header>
+        <a href="#" className="logo">
+          MyBlog
         </a>
+        <nav>
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </nav>
       </header>
-    </div>
+
+      <div className="post">
+        <div className="img">
+          <img src="https://www.purina.co.uk/sites/default/files/2020-12/5-Reasons-Why-Cats-MeowTEASER.jpg" />
+        </div>
+        <div className="text">
+          <h2>5 Reasons Why Cats Meow</h2>
+          <p className="info">
+            <a href="#" className="author">Tieubobo</a>
+            <time>2023-07-24 16:45</time>
+          </p>
+          <p class="summary">
+            Whether you enjoy a soothing meow every now and then or you’re growing
+            impatient with all your cat’s attempts to make conversation, the
+            reasons why cats meow are just as fascinating as the kittens
+            themselves. Find out more here.
+          </p>
+        </div>
+      </div>
+
+      <div className="post">
+        <div className="img">
+          <img src="https://www.purina.co.uk/sites/default/files/2020-12/5-Reasons-Why-Cats-MeowTEASER.jpg" />
+        </div>
+        <div className="text">
+          <h2>5 Reasons Why Cats Meow</h2>
+          <p className="info">
+            <a href="#" className="author">Tieubobo</a>
+            <time>2023-07-24 16:45</time>
+          </p>
+          <p class="summary">
+            Whether you enjoy a soothing meow every now and then or you’re growing
+            impatient with all your cat’s attempts to make conversation, the
+            reasons why cats meow are just as fascinating as the kittens
+            themselves. Find out more here.
+          </p>
+        </div>
+      </div>
+
+      <div className="post">
+        <div className="img">
+          <img src="https://www.purina.co.uk/sites/default/files/2020-12/5-Reasons-Why-Cats-MeowTEASER.jpg" />
+        </div>
+        <div className="text">
+          <h2>5 Reasons Why Cats Meow</h2>
+          <p className="info">
+            <a href="#" className="author">Tieubobo</a>
+            <time>2023-07-24 16:45</time>
+          </p>
+          <p class="summary">
+            Whether you enjoy a soothing meow every now and then or you’re growing
+            impatient with all your cat’s attempts to make conversation, the
+            reasons why cats meow are just as fascinating as the kittens
+            themselves. Find out more here.
+          </p>
+        </div>
+      </div>
+    </main>
   );
 }
 
