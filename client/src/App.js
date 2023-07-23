@@ -1,75 +1,23 @@
 import "./App.css";
+import IndexPage from './pages/IndexPage';
+import LoginPage from './pages/LoginPage';
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
 
 function App() {
   return (
-    <main>
-      <header>
-        <a href="#" className="logo">
-          MyBlog
-        </a>
-        <nav>
-          <a href="#">Login</a>
-          <a href="#">Register</a>
-        </nav>
-      </header>
-
-      <div className="post">
-        <div className="img">
-          <img src="https://www.purina.co.uk/sites/default/files/2020-12/5-Reasons-Why-Cats-MeowTEASER.jpg" />
-        </div>
-        <div className="text">
-          <h2>5 Reasons Why Cats Meow</h2>
-          <p className="info">
-            <a href="#" className="author">Tieubobo</a>
-            <time>2023-07-24 16:45</time>
-          </p>
-          <p class="summary">
-            Whether you enjoy a soothing meow every now and then or you’re growing
-            impatient with all your cat’s attempts to make conversation, the
-            reasons why cats meow are just as fascinating as the kittens
-            themselves. Find out more here.
-          </p>
-        </div>
-      </div>
-
-      <div className="post">
-        <div className="img">
-          <img src="https://www.purina.co.uk/sites/default/files/2020-12/5-Reasons-Why-Cats-MeowTEASER.jpg" />
-        </div>
-        <div className="text">
-          <h2>5 Reasons Why Cats Meow</h2>
-          <p className="info">
-            <a href="#" className="author">Tieubobo</a>
-            <time>2023-07-24 16:45</time>
-          </p>
-          <p class="summary">
-            Whether you enjoy a soothing meow every now and then or you’re growing
-            impatient with all your cat’s attempts to make conversation, the
-            reasons why cats meow are just as fascinating as the kittens
-            themselves. Find out more here.
-          </p>
-        </div>
-      </div>
-
-      <div className="post">
-        <div className="img">
-          <img src="https://www.purina.co.uk/sites/default/files/2020-12/5-Reasons-Why-Cats-MeowTEASER.jpg" />
-        </div>
-        <div className="text">
-          <h2>5 Reasons Why Cats Meow</h2>
-          <p className="info">
-            <a href="#" className="author">Tieubobo</a>
-            <time>2023-07-24 16:45</time>
-          </p>
-          <p class="summary">
-            Whether you enjoy a soothing meow every now and then or you’re growing
-            impatient with all your cat’s attempts to make conversation, the
-            reasons why cats meow are just as fascinating as the kittens
-            themselves. Find out more here.
-          </p>
-        </div>
-      </div>
-    </main>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route
+          index
+          element={<IndexPage/>}
+        />
+        <Route
+          path={"/login"}
+          element={<LoginPage/>}
+        />
+      </Route>
+    </Routes>
   );
 }
 
